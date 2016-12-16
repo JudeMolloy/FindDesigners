@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+
+<div class="container">
+<h1>Promoted Designers</h1>
+{% for designer in designers_promoted %}
+    <ul class="container">
+        <p>{{ designer }} {{ designer.up_votes }} {{ designer.is_available }} {{ desingenr.thumbnail_cost }} <a href="{% url 'main:designer_detail' designer.pk %}">View Profile</a></p>
+    </ul>
+{% endfor %}
+</div>
+
+<br>
+
+<div class="container">
+<h1>Popular Designers</h1>
+{% for designer in designers_popular %}
+    <ul class="container">
+        <p>{{ designer }} {{ designer.up_votes }} {{ designer.is_available }} {{ desingenr.thumbnail_cost }} <a href="{% url 'main:designer_detail' designer.pk %}">View Profile</a></p>
+    </ul>
+{% endfor %}
+</div>
+
+{% endblock %}

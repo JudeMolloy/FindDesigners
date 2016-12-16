@@ -1,0 +1,34 @@
+{% extends 'main/base.html' %}
+{% load main_extras %}
+
+{%  block content %}
+{#    {% for designer in designers %}#}
+{#    <ul>#}
+{#        {{ designer }} {{ designer.up_votes }} {{ designer.is_available }}#}
+{#    </ul>#}
+{#    {% endfor %}#}
+
+
+<div class="container my-3 ">
+    <h1 class="text-xs-center">Search Designers</h1>
+</div>
+
+{% for designer in query %}
+    <ul class="container">
+        <p>{{ designer }} {{ designer.up_votes }} {{ designer.is_available }} {{ desingenr.thumbnail_cost }} <a href="{% url 'main:designer_detail' designer.pk %}">View Profile</a></p>
+    </ul>
+{% endfor %}
+
+
+<div class="container">
+    <form method="POST" action="">
+        {% csrf_token %}
+        <section class="container lead form-group col-md-4">{{ form.rating.label }} {{ form.rating }}</section>
+        <section class="container lead form-group col-md-4">{{ form.can_work.label }} {{ form.can_work }}</section>
+        <section class="container lead form-group col-md-4">{{ form.thumbnail_cost.label }} {{ form.thumbnail_cost }}</section>
+        <input type="submit" value="Search">
+    </form>
+</div>
+
+
+{% endblock %}
