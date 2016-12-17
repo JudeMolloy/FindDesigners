@@ -10,25 +10,38 @@
 
 
 <div class="container my-3 ">
-    <h1 class="text-xs-center">Search Designers</h1>
+    <h1 class="text-xs-center">Find Designers</h1>
 </div>
-
-{% for designer in query %}
-    <ul class="container">
-        <p>{{ designer }} {{ designer.up_votes }} {{ designer.is_available }} {{ desingenr.thumbnail_cost }} <a href="{% url 'main:designer_detail' designer.pk %}">View Profile</a></p>
-    </ul>
-{% endfor %}
-
 
 <div class="container">
     <form method="POST" action="">
         {% csrf_token %}
         <section class="container lead form-group col-md-4">{{ form.rating.label }} {{ form.rating }}</section>
         <section class="container lead form-group col-md-4">{{ form.can_work.label }} {{ form.can_work }}</section>
-        <section class="container lead form-group col-md-4">{{ form.thumbnail_cost.label }} {{ form.thumbnail_cost }}</section>
-        <input type="submit" value="Search">
+        <section class="container lead form-group col-md-4">{{ form.thumbnail_cost.label }}
+            {{ form.thumbnail_cost }}</section>
+        <input type="submit" value="Search" class="btn btn-primary">
     </form>
+
+<br>
+
+{% if results == 2 %}
+    <h1>Your search returned <b>{{ query|length }}</b> result{{ query|length|pluralize }}.</h1>
+{% elif results == 1 %}
+    <h1>Sorry, we couldn't find any designers that match your search.</h1>
+{% endif %}
+<br>
+<br>
+
 </div>
 
+{% for designer in query %}
+    <ul class="container text-center">
+        <h3><img src="{{ designer.avatar.url }}"  height="100" width="100"> {{ designer }}
+            {{ designer.up_votes }} Upvote{{ designer.up_votes|pluralize }} {{ designer.is_available }}
+            {{ desingenr.thumbnail_cost }} <a href="{% url 'main:designer_detail' designer.pk %}">View Profile</a></h3>
+    <br>
+    </ul>
+{% endfor %}
 
 {% endblock %}

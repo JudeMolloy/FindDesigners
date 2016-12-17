@@ -6,7 +6,9 @@
 <h1>Promoted Designers</h1>
 {% for designer in designers_promoted %}
     <ul class="container">
-        <p>{{ designer }} {{ designer.up_votes }} {{ designer.is_available }} {{ desingenr.thumbnail_cost }} <a href="{% url 'main:designer_detail' designer.pk %}">View Profile</a></p>
+        <p><img src="{{ designer.avatar.url }}"  height="100" width="100"> {{ designer }}
+            {{ designer.up_votes }} Upvote{{ designer.up_votes|pluralize }} {{ designer.is_available }}
+            {{ desingenr.thumbnail_cost }} <a href="{% url 'main:designer_detail' designer.pk %}">View Profile</a></p>
     </ul>
 {% endfor %}
 </div>
@@ -17,7 +19,9 @@
 <h1>Popular Designers</h1>
 {% for designer in designers_popular %}
     <ul class="container">
-        <p>{{ designer }} {{ designer.up_votes }} {{ designer.is_available }} {{ desingenr.thumbnail_cost }} <a href="{% url 'main:designer_detail' designer.pk %}">View Profile</a></p>
+        <p><img src="{{ designer.avatar.url }}"  height="100" width="100"> {{ designer }}
+            {{ designer.up_votes }} Upvote{{ designer.up_votes|pluralize }} {{ designer.is_available }}
+            {{ desingenr.thumbnail_cost }} <a href="{% url 'main:designer_detail' designer.pk %}">View Profile</a></p>
     </ul>
 {% endfor %}
 </div>

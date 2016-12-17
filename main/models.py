@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Designer(models.Model):
+    avatar = models.ImageField(upload_to='img/', default='img/default_profile_pic.jpg')
     name = models.CharField(max_length=25)
     twitter = models.CharField(max_length=15)
     up_votes = models.IntegerField(default=0)

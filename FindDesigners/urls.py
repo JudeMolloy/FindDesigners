@@ -15,12 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.conf import settings
+from django.conf.urls.static import static
+
 from main import views
 
 
 urlpatterns = [
     url(r'^$', views.landing, name='home'),
-    url(r'search', views.search, name='search'),
+    url(r'find', views.find, name='find'),
     url(r'^designer/', include('main.urls')),
     url(r'^admin/', admin.site.urls),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -3,8 +3,10 @@
 {% block content %}
 <div class="container">
     <h1 class="text-center">{{ designer.name }}</h1>
+    <img src="{{ designer.avatar.url }}"  height="100" width="100">
     <br>
-    <h2>Twitter: @{{ designer.twitter }}</h2>
+    <br>
+    <h2>Twitter: <a href="https://twitter.com/{{ designer.twitter }}">@{{ designer.twitter }}</a></h2>
     <h2>{{ designer.up_votes }} Upvote{{ designer.up_votes|pluralize }}.</h2>
     <h2>{{ designer.is_available }}</h2>
     <h2>Thumbnail Price: £{{ designer.thumbnail_price|floatformat:"-2" }}</h2>
