@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de7a0545-4f2a-4ee6-8a8b-c69e0c700fa7" name="Default" comment="A lot has been implemented, I will have to start making more commits.&#10;&#10;- Twitter profile link&#10;- Image uploading&#10;- Rearranged find/filter page&#10;- No results found message&#10;- Search bar&#10;&#10;- pip install django-cleanup &#10;- pip install Pillow&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/FindDesigners.iml" afterPath="$PROJECT_DIR$/.idea/FindDesigners.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FindDesigners/settings.py" afterPath="$PROJECT_DIR$/FindDesigners/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FindDesigners/urls.py" afterPath="$PROJECT_DIR$/FindDesigners/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/forms.py" afterPath="$PROJECT_DIR$/main/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/models.py" afterPath="$PROJECT_DIR$/main/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/main/base.html" afterPath="$PROJECT_DIR$/main/templates/main/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/main/designer_detail.html" afterPath="$PROJECT_DIR$/main/templates/main/designer_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/main/find.html" afterPath="$PROJECT_DIR$/main/templates/main/find.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/main/index.html" afterPath="$PROJECT_DIR$/main/templates/main/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/urls.py" afterPath="$PROJECT_DIR$/main/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/views.py" afterPath="$PROJECT_DIR$/main/views.py" />
-    </list>
+    <list default="true" id="de7a0545-4f2a-4ee6-8a8b-c69e0c700fa7" name="Default" comment="" />
     <ignored path="FindDesigners.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -54,8 +39,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/templates/main/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+            <state relative-caret-position="375">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -621,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481911692882</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="A lot has been implemented, I will have to start making more commits.&#10;&#10;- Twitter profile link&#10;- Image uploading&#10;- Rearranged find/filter page&#10;- No results found message&#10;- Search bar&#10;&#10;- pip install django-cleanup &#10;- pip install Pillow&#10;">
+      <created>1482011485015</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1482011485015</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1075,8 +1067,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/templates/main/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="11" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state relative-caret-position="375">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>

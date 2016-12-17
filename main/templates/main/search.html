@@ -1,0 +1,28 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+
+<br>
+
+<div class="container">
+
+{% if results == 2 %}
+    <h1>Your search returned <b>{{ designers|length }}</b> result{{ designers|length|pluralize }}.</h1>
+{% elif results == 1 %}
+    <h1>Sorry, we couldn't find any designers that match your search.</h1>
+{% endif %}
+<br>
+<br>
+
+</div>
+
+{% for designer in designers %}
+    <ul class="container text-center">
+        <h3><img src="{{ designer.avatar.url }}"  height="100" width="100"> {{ designer }}
+            {{ designer.up_votes }} Upvote{{ designer.up_votes|pluralize }} {{ designer.is_available }} {{ desingenr.thumbnail_cost }}
+            <a href="{% url 'main:designer_detail' designer.pk %}">View Profile</a></h3>
+    <br>
+    </ul>
+{% endfor %}
+
+{% endblock %}
