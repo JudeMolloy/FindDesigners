@@ -8,7 +8,7 @@ from django.core.urlresolvers import reverse_lazy
 from django.views import generic
 from django.contrib.auth.decorators import login_required
 
-from . import forms
+from .forms import FilterDesigners, UserCreateForm
 
 
 def landing(request):
@@ -113,6 +113,6 @@ class LogoutView(generic.RedirectView):
 
 
 class SignUp(generic.CreateView):
-    form_class = forms.UserCreateForm
+    form_class = UserCreateForm
     success_url = reverse_lazy('login')
-    template_name = 'main/sign_up.html'
+    template_name = 'main/signup.html'
