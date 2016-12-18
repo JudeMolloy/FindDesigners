@@ -23,6 +23,8 @@ from main import views
 
 urlpatterns = [
     url(r'^$', views.landing, name='home'),
+    url(r'login/$', views.LoginView.as_view(), name='login'),
+    url(r'^$/', include('django.contrib.auth.urls')),
     url(r'find', views.find, name='find'),
     url(r'^designer/', include('main.urls')),
     url(r'^admin/', admin.site.urls),

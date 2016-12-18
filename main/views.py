@@ -1,6 +1,12 @@
 from .models import Designer
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect
+from django.contrib.auth import login
+from django.contrib.auth.forms import AuthenticationForm
+from django.core.urlresolvers import reverse_lazy
+from django.views import generic
+from django.contrib.auth.decorators import login_required
 
 from .forms import FilterDesigners
 
@@ -12,6 +18,7 @@ def landing(request):
     return render(request, 'main/index.html', context)
 
 
+@login_required(login_url='/login/')
 def search(request):
     term = request.GET.get('search')
     designers = Designer.objects.filter(name__icontains=term)
@@ -28,6 +35,7 @@ def search(request):
     return render(request, 'main/search.html', context)
 
 
+@login_required(login_url='/login/')
 def find(request):
     query = None
     results = 0
@@ -79,3 +87,18 @@ def designer_detail(request, designer_id):
     designer = get_object_or_404(Designer, pk=designer_id)
     context = {'designer': designer, }
     return render(request, 'main/designer_detail.html', context)
+
+
+class LoginView(generic.FormView):
+    form_class = AuthenticationForm
+    success_url = reverse_lazy('find')
+    template_name = "main/registration/login.html"
+
+    def get_form(self, form_class=None):
+        if form_class is None:
+            form_class = self.get_form_class()
+        return form_class(self.request, **self.get_form_kwargs())
+
+    def form_valid(self, form):
+        login(self.request, form.get_user())
+        return super().form_valid(form)
