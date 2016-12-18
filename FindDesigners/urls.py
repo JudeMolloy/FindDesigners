@@ -24,6 +24,8 @@ from main import views
 urlpatterns = [
     url(r'^$', views.landing, name='home'),
     url(r'login/$', views.LoginView.as_view(), name='login'),
+    url(r'logout/$', views.LogoutView.as_view(), name='logout'),
+    url(r'signup/$', views.SignUp.as_view(), name='sign_up'),
     url(r'^$/', include('django.contrib.auth.urls')),
     url(r'find', views.find, name='find'),
     url(r'^designer/', include('main.urls')),

@@ -2,13 +2,13 @@ from .models import Designer
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect
-from django.contrib.auth import login
+from django.contrib.auth import login, logout
 from django.contrib.auth.forms import AuthenticationForm
 from django.core.urlresolvers import reverse_lazy
 from django.views import generic
 from django.contrib.auth.decorators import login_required
 
-from .forms import FilterDesigners
+from . import forms
 
 
 def landing(request):
@@ -92,7 +92,7 @@ def designer_detail(request, designer_id):
 class LoginView(generic.FormView):
     form_class = AuthenticationForm
     success_url = reverse_lazy('find')
-    template_name = "main/registration/login.html"
+    template_name = "main/login.html"
 
     def get_form(self, form_class=None):
         if form_class is None:
@@ -101,4 +101,18 @@ class LoginView(generic.FormView):
 
     def form_valid(self, form):
         login(self.request, form.get_user())
-        return super().form_valid(form)
+        return super(LoginView, self).form_valid(form)
+
+
+class LogoutView(generic.RedirectView):
+    url = reverse_lazy('home')
+
+    def get(self, request, *args, **kwargs):
+        logout(request)
+        return super(LogoutView, self).get(request, *args, **kwargs)
+
+
+class SignUp(generic.CreateView):
+    form_class = forms.UserCreateForm
+    success_url = reverse_lazy('login')
+    template_name = 'main/sign_up.html'
