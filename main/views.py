@@ -1,4 +1,5 @@
-from .models import Designer
+from django.conf import settings
+from django.db import models
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect
@@ -12,8 +13,8 @@ from .forms import FilterDesigners, UserCreateForm
 
 
 def landing(request):
-    designers_promoted = Designer.objects.filter(promoted=True)
-    designers_popular = Designer.objects.order_by('-up_votes')
+    designers_promoted = settings.AUTH_USER_MODEL.objects.filter(promoted=True)
+    designers_popular = settings.AUTH_USER_MODEL.objects.order_by('-up_votes')
     context = {'designers_promoted': designers_promoted, 'designers_popular': designers_popular, }
     return render(request, 'main/index.html', context)
 
@@ -21,7 +22,7 @@ def landing(request):
 @login_required(login_url='/login/')
 def search(request):
     term = request.GET.get('search')
-    designers = Designer.objects.filter(username__icontains=term)
+    designers = settings.AUTH_USER_MODEL.objects.filter(username__icontains=term)
     results = 0
 
     # calculation for what result message to display
@@ -61,7 +62,7 @@ def find(request):
                 thumbnail_cost_range = 1
 
             # the query that is built with edited params from the form
-            query = Designer.objects.filter(
+            query = settings.AUTH_USER_MODEL.objects.filter(
                 up_votes__gte=int(rating), up_votes__lte=int(rating) + 25,
                 available=can_work,
                 thumbnail_price__gte=float(thumbnail_cost),
@@ -84,7 +85,7 @@ def find(request):
 
 
 def designer_detail(request, designer_id):
-    designer = get_object_or_404(Designer, pk=designer_id)
+    designer = get_object_or_404(settings.AUTH_USER_MODEL, pk=designer_id)
     context = {'designer': designer, }
     return render(request, 'main/designer_detail.html', context)
 

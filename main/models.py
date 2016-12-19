@@ -1,4 +1,4 @@
-from django.contrib.auth.modesl import (
+from django.contrib.auth.models import (
     AbstractBaseUser,
     BaseUserManager,
     PermissionsMixin

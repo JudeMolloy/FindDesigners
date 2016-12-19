@@ -128,3 +128,5 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = 'main/media/'
 
 LOGIN_REDIRECT_URL = 'main:home'
+
+AUTH_USER_MODEL = 'main.Designer'

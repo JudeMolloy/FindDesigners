@@ -7,7 +7,7 @@ from django.contrib.auth import get_user_model
 class UserCreateForm(UserCreationForm):
     class Meta:
         fields = ('username', 'email', 'password1', 'password2')
-        model = User # need to point to get_user_model()
+        model = get_user_model()  # need this for forms as the cant take strings to define the model
 
     def __init__(self, *args, **kwargs):
         super(UserCreateForm, self).__init__(*args, **kwargs)
