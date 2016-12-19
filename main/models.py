@@ -11,7 +11,7 @@ class UserManager(BaseUserManager):
     def create_user(self, email, username, display_name=None, password=None):
         if not email:
             raise ValueError('Users must have an email address')
-        if not  display_name:
+        if not display_name:
             display_name = username
 
         user = self.model(
@@ -41,8 +41,8 @@ class Designer(AbstractBaseUser, PermissionsMixin):
     username = models.CharField(max_length=25, unique=True)
     display_name = models.CharField(max_length=25)
     twitter = models.CharField(max_length=15)
-    bio = models.CharField(max_length=145, blank=True, default="")
-    avatar = models.ImageField(default='img/default_profile_pic.jpg')
+    bio = models.TextField(max_length=145, blank=True, default="")
+    avatar = models.ImageField(upload_to='img/', default='img/default_profile_pic.jpg')
     up_votes = models.IntegerField(default=0)
     available = models.BooleanField(default=False)
     thumbnail_price = models.FloatField()
@@ -69,15 +69,15 @@ class Designer(AbstractBaseUser, PermissionsMixin):
 
     def is_available(self):
         if self.available:
-            return '{} is available to work.'.format(self.name)
+            return '{} is available to work.'.format(self.display_name)
         else:
-            return '{} is not available to work.'.format(self.name)
+            return '{} is not available to work.'.format(self.display_name)
 
     def is_monthly(self):
         if self.monthly:
-            return '{} does monthly deals.'.format(self.name)
+            return '{} does monthly deals.'.format(self.display_name)
         else:
-            return '{} does not do monthly deals.'.format(self.name)
+            return '{} does not do monthly deals.'.format(self.display_name)
 
 # class Designer(models.Model):
 #     avatar = models.ImageField(upload_to='img/', default='img/default_profile_pic.jpg')

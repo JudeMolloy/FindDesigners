@@ -6,13 +6,22 @@ from django.contrib.auth import get_user_model
 
 class UserCreateForm(UserCreationForm):
     class Meta:
-        fields = ('username', 'email', 'password1', 'password2')
+        fields = ('username', 'email', 'password1', 'password2',
+                  'avatar', 'display_name', 'twitter', 'bio', 'available',
+                  'monthly', 'thumbnail_price', 'channel_art_price')
         model = get_user_model()  # need this for forms as the cant take strings to define the model
 
     def __init__(self, *args, **kwargs):
         super(UserCreateForm, self).__init__(*args, **kwargs)
-        self.fields['username'].max_length = 15
+
+        # labels and placeholders
         self.fields['email'].label = 'Email address'
+        self.fields['thumbnail_price'].min_value = 0.25
+
+        # required fields
+        self.fields['username'].required = True
+        self.fields['thumbnail_price'].required = True
+        self.fields['channel_art_price'].required = True
 
 
 rating_choices = (
