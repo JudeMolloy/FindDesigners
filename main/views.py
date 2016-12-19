@@ -21,7 +21,7 @@ def landing(request):
 @login_required(login_url='/login/')
 def search(request):
     term = request.GET.get('search')
-    designers = Designer.objects.filter(name__icontains=term)
+    designers = Designer.objects.filter(username__icontains=term)
     results = 0
 
     # calculation for what result message to display
