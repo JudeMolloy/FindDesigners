@@ -26,8 +26,15 @@ urlpatterns = [
     url(r'login/$', views.LoginView.as_view(), name='login'),
     url(r'logout/$', views.LogoutView.as_view(), name='logout'),
     url(r'signup/$', views.SignUp.as_view(), name='signup'),
+    url(r'update_profile/(?P<pk>[0-9]+)', views.UpdateProfile.as_view(), name='update_profile'),
     url(r'^$/', include('django.contrib.auth.urls')),
     url(r'find', views.find, name='find'),
     url(r'^designer/', include('main.urls')),
     url(r'^admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns += [
+        url(r'^__debug__/', include(debug_toolbar.urls)),
+    ]

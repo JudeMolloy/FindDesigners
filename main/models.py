@@ -42,7 +42,7 @@ class Designer(AbstractBaseUser, PermissionsMixin):
     display_name = models.CharField(max_length=25)
     twitter = models.CharField(max_length=15)
     bio = models.TextField(max_length=145, blank=True, default="")
-    avatar = models.ImageField(upload_to='img/', default='img/default_profile_pic.jpg')
+    avatar = models.ImageField(upload_to='avatars', default='img/default_profile_pic.jpg')
     up_votes = models.IntegerField(default=0)
     available = models.BooleanField(default=False)
     thumbnail_price = models.FloatField()

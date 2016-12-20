@@ -24,6 +24,12 @@ class UserCreateForm(UserCreationForm):
         self.fields['channel_art_price'].required = True
 
 
+class UserUpdateForm(forms.ModelForm):
+    class Meta:
+        fields = ('username', 'email', 'avatar', 'display_name', 'twitter', 'bio', 'available',
+                  'monthly', 'thumbnail_price', 'channel_art_price')
+        model = get_user_model()  # need this for forms as the cant take strings to define the model
+
 rating_choices = (
     ('0', '0-25'), ('25', '25-50'), ('50', '50-75'), ('75', '75-100'), ('100', '100+'),
 )

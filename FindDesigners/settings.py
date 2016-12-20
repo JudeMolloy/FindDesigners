@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_cleanup',
     'bootstrap3',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -50,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'FindDesigners.urls'
@@ -119,14 +121,17 @@ USE_L10N = True
 USE_TZ = True
 
 
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__name__))
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = 'main/media/'
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
 
 LOGIN_REDIRECT_URL = 'main:home'
 
 AUTH_USER_MODEL = 'main.Designer'
+
+INTERNAL_IPS = '127.0.0.1'

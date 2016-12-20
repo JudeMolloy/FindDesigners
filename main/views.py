@@ -9,7 +9,7 @@ from django.core.urlresolvers import reverse_lazy
 from django.views import generic
 from django.contrib.auth.decorators import login_required
 from .models import Designer
-from .forms import FilterDesigners, UserCreateForm
+from .forms import FilterDesigners, UserCreateForm, UserUpdateForm
 
 
 def landing(request):
@@ -117,3 +117,11 @@ class SignUp(generic.CreateView):
     form_class = UserCreateForm
     success_url = reverse_lazy('login')
     template_name = 'main/signup.html'
+
+
+class UpdateProfile(generic.UpdateView):
+    model = Designer
+    form_class = UserUpdateForm
+    success_url = reverse_lazy('home')
+    template_name = 'main/profile_update.html'
+
