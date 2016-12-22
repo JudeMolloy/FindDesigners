@@ -2,27 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de7a0545-4f2a-4ee6-8a8b-c69e0c700fa7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/templates/main/profile_update.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/media/img/Cartoon.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main/media/img/E0r2BpAV.jpg" afterPath="$PROJECT_DIR$/static/img/E0r2BpAV.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main/media/img/FW5Rm7G4.jpg" afterPath="$PROJECT_DIR$/static/img/FW5Rm7G4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main/media/img/LJk2lhif.jpg" afterPath="$PROJECT_DIR$/static/img/LJk2lhif.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main/media/img/M_6HcTVi.jpg" afterPath="$PROJECT_DIR$/static/img/M_6HcTVi.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main/media/img/YOQoDj5_.jpg" afterPath="$PROJECT_DIR$/static/img/YOQoDj5_.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main/media/img/c2hLqxKM.jpg" afterPath="$PROJECT_DIR$/static/img/c2hLqxKM.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main/media/img/default_profile_pic.jpg" afterPath="$PROJECT_DIR$/static/img/default_profile_pic.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main/media/img/depositphotos_59095493-stock-illustration-profile-icon-male-avatar.jpg" afterPath="$PROJECT_DIR$/static/img/depositphotos_59095493-stock-illustration-profile-icon-male-avatar.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main/media/img/depositphotos_59095493-stock-illustration-profile-icon-male-avatar_WsVDude.jpg" afterPath="$PROJECT_DIR$/static/img/depositphotos_59095493-stock-illustration-profile-icon-male-avatar_WsVDude.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main/media/img/dmjLQH2U.jpg" afterPath="$PROJECT_DIR$/static/img/dmjLQH2U.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main/media/img/m_9mwkRT.jpg" afterPath="$PROJECT_DIR$/static/img/m_9mwkRT.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main/media/img/rmCJHL2C.jpg" afterPath="$PROJECT_DIR$/static/img/rmCJHL2C.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main/media/img/xBVuKfqz.jpg" afterPath="$PROJECT_DIR$/static/img/xBVuKfqz.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/media/img/default_profile_pic.jpg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/E0r2BpAV.jpg" afterPath="$PROJECT_DIR$/media/img/E0r2BpAV.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/FW5Rm7G4.jpg" afterPath="$PROJECT_DIR$/media/img/FW5Rm7G4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/LJk2lhif.jpg" afterPath="$PROJECT_DIR$/media/img/LJk2lhif.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/M_6HcTVi.jpg" afterPath="$PROJECT_DIR$/media/img/M_6HcTVi.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/YOQoDj5_.jpg" afterPath="$PROJECT_DIR$/media/img/YOQoDj5_.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/c2hLqxKM.jpg" afterPath="$PROJECT_DIR$/media/img/c2hLqxKM.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/depositphotos_59095493-stock-illustration-profile-icon-male-avatar.jpg" afterPath="$PROJECT_DIR$/media/img/depositphotos_59095493-stock-illustration-profile-icon-male-avatar.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/depositphotos_59095493-stock-illustration-profile-icon-male-avatar_WsVDude.jpg" afterPath="$PROJECT_DIR$/media/img/depositphotos_59095493-stock-illustration-profile-icon-male-avatar_WsVDude.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/dmjLQH2U.jpg" afterPath="$PROJECT_DIR$/media/img/dmjLQH2U.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/m_9mwkRT.jpg" afterPath="$PROJECT_DIR$/media/img/m_9mwkRT.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/rmCJHL2C.jpg" afterPath="$PROJECT_DIR$/media/img/rmCJHL2C.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/xBVuKfqz.jpg" afterPath="$PROJECT_DIR$/media/img/xBVuKfqz.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FindDesigners/settings.py" afterPath="$PROJECT_DIR$/FindDesigners/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FindDesigners/urls.py" afterPath="$PROJECT_DIR$/FindDesigners/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/forms.py" afterPath="$PROJECT_DIR$/main/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/models.py" afterPath="$PROJECT_DIR$/main/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/main/base.html" afterPath="$PROJECT_DIR$/main/templates/main/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/main/designer_detail.html" afterPath="$PROJECT_DIR$/main/templates/main/designer_detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/main/profile_update.html" afterPath="$PROJECT_DIR$/main/templates/main/profile_update.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/templates/main/signup.html" afterPath="$PROJECT_DIR$/main/templates/main/signup.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/views.py" afterPath="$PROJECT_DIR$/main/views.py" />
     </list>
     <ignored path="FindDesigners.iws" />
@@ -50,8 +51,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+            <state relative-caret-position="412">
+              <caret line="124" column="31" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -62,8 +63,28 @@
       <file leaf-file-name="profile_update.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/templates/main/profile_update.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main/templates/main/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="designer_detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/templates/main/designer_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -72,8 +93,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FindDesigners/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+            <state relative-caret-position="493">
+              <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
               <folding>
                 <element signature="e#647#688#0" expanded="true" />
               </folding>
@@ -81,41 +102,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="find.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/templates/main/find.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="76" selection-start-line="40" selection-start-column="76" selection-end-line="40" selection-end-column="103" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/templates/main/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="119">
+              <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FindDesigners/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="127" column="22" selection-start-line="127" selection-start-column="22" selection-end-line="127" selection-end-column="22" />
+            <state relative-caret-position="2176">
+              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -134,8 +135,8 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+            <state relative-caret-position="402">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -146,8 +147,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+            <state relative-caret-position="375">
+              <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
               <folding>
                 <element signature="e#0#106#0" expanded="true" />
               </folding>
@@ -181,15 +182,16 @@
         <option value="$PROJECT_DIR$/main/templates/main/sign_up.html" />
         <option value="$PROJECT_DIR$/main/templates/main/login.html" />
         <option value="$PROJECT_DIR$/main/templates/main/password_reset_form.html" />
-        <option value="$PROJECT_DIR$/main/templates/main/base.html" />
-        <option value="$PROJECT_DIR$/main/templates/main/designer_detail.html" />
         <option value="$PROJECT_DIR$/main/admin.py" />
-        <option value="$PROJECT_DIR$/main/templates/main/profile_update.html" />
-        <option value="$PROJECT_DIR$/main/views.py" />
         <option value="$PROJECT_DIR$/main/forms.py" />
-        <option value="$PROJECT_DIR$/FindDesigners/urls.py" />
         <option value="$PROJECT_DIR$/main/models.py" />
         <option value="$PROJECT_DIR$/FindDesigners/settings.py" />
+        <option value="$PROJECT_DIR$/main/templates/main/signup.html" />
+        <option value="$PROJECT_DIR$/main/templates/main/profile_update.html" />
+        <option value="$PROJECT_DIR$/main/views.py" />
+        <option value="$PROJECT_DIR$/FindDesigners/urls.py" />
+        <option value="$PROJECT_DIR$/main/templates/main/designer_detail.html" />
+        <option value="$PROJECT_DIR$/main/templates/main/base.html" />
       </list>
     </option>
   </component>
@@ -230,6 +232,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -259,29 +262,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="avatars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FindDesigners" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FindDesigners" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="media" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -313,13 +294,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FindDesigners" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FindDesigners" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="FindDesigners" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -333,11 +335,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jude\Videos\Molloy\Programming\FindDesigners\media" />
       <recent name="C:\Users\Jude\Videos\Molloy\Programming\FindDesigners\static" />
       <recent name="C:\Users\Jude\Videos\Molloy\Programming\FindDesigners" />
       <recent name="C:\Users\Jude\Videos\Molloy\Programming\FindDesigners\main\templates\main" />
       <recent name="C:\Users\Jude\Videos\Molloy\Programming\FindDesigners\main\templates\main\registration" />
-      <recent name="$PROJECT_DIR$/main/media/img" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/main/static/main/avatars" />
@@ -662,21 +664,28 @@
       <option name="project" value="LOCAL" />
       <updated>1482182213378</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="User All Working">
+      <created>1482275926175</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1482275926175</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19594595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1991256" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849604" sideWeight="0.50555557" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849604" sideWeight="0.50555557" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33877552" sideWeight="0.49444443" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33877552" sideWeight="0.49444443" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26868907" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26868907" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -713,7 +722,8 @@
     <MESSAGE value="Not Major&#10;&#10;- Added a little to AUTH and auth buttonsI am going to work on mac so this is why I am committing" />
     <MESSAGE value="Combined User and Designer Model" />
     <MESSAGE value="Combined User and Designer model into model called Designer&#10;&#10;-Created Sign Up Form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Combined User and Designer model into model called Designer&#10;&#10;-Created Sign Up Form" />
+    <MESSAGE value="User All Working" />
+    <option name="LAST_COMMIT_MESSAGE" value="User All Working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -958,7 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -994,26 +1003,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/templates/main/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/templates/main/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/templates/main/designer_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="100" selection-start-line="8" selection-start-column="100" selection-end-line="8" selection-end-column="100" />
           <folding />
         </state>
       </provider>
@@ -1029,14 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/templates/main/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1056,34 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/templates/main/profile_update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/templates/main/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1092,30 +1049,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FindDesigners/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2176">
+          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/main/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/FindDesigners/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+        <state relative-caret-position="493">
+          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
           <folding>
             <element signature="e#647#688#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/main/designer_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/main/profile_update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="124" column="31" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+        <state relative-caret-position="375">
+          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
           <folding>
             <element signature="e#0#106#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FindDesigners/settings.py">
+    <entry file="file://$PROJECT_DIR$/main/templates/main/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="127" column="22" selection-start-line="127" selection-start-column="22" selection-end-line="127" selection-end-column="22" />
+        <state relative-caret-position="308">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
           <folding />
         </state>
       </provider>

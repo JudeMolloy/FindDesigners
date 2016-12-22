@@ -6,6 +6,7 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth import login, logout
 from django.contrib.auth.forms import AuthenticationForm
 from django.core.urlresolvers import reverse_lazy
+from django.core.urlresolvers import reverse
 from django.views import generic
 from django.contrib.auth.decorators import login_required
 from .models import Designer
@@ -119,9 +120,27 @@ class SignUp(generic.CreateView):
     template_name = 'main/signup.html'
 
 
-class UpdateProfile(generic.UpdateView):
+class UpdateProfile(LoginRequiredMixin, generic.UpdateView):
     model = Designer
     form_class = UserUpdateForm
     success_url = reverse_lazy('home')
     template_name = 'main/profile_update.html'
+
+    def get_object(self):
+        return self.request.user
+
+# def update_profile(request):
+#
+#     user = request.user
+#     form = UserUpdateForm(request.POST, instance=user)
+#     form.actual_user = request.user
+#     if request.method == 'POST':
+#         if form.is_valid():
+#             form.save()
+#             return HttpResponseRedirect(reverse('update_profile_success'))
+#     else:
+#         form = UserUpdateForm()
+#
+#     context = {'form': form, }
+#     return render(request, 'main/profile_update.html', context)
 
