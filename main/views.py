@@ -14,8 +14,12 @@ from .forms import FilterDesigners, UserCreateForm, UserUpdateForm
 
 
 def landing(request):
+    return render(request, 'main/landing.html')
+
+
+def home(request):
     designers_promoted = Designer.objects.filter(promoted=True)
-    designers_popular = Designer.objects.order_by('-up_votes')
+    designers_popular = Designer.objects.order_by('-votes')
     context = {'designers_promoted': designers_promoted, 'designers_popular': designers_popular, }
     return render(request, 'main/index.html', context)
 
@@ -55,6 +59,13 @@ def find(request):
             print(can_work)
             thumbnail_cost = form.cleaned_data['thumbnail_cost']
             print(thumbnail_cost)
+            channel_art_cost = form.cleaned_data['channel_art_cost']
+            print(channel_art_cost)
+            does_monthly = form.cleaned_data['does_monthly']
+            print(does_monthly)
+
+
+
 
             # the range used for the last value in the restricted choice set e.g 100+
             if int(thumbnail_cost) == 2:
@@ -62,15 +73,52 @@ def find(request):
             else:
                 thumbnail_cost_range = 1
 
-            # the query that is built with edited params from the form
-            query = Designer.objects.filter(
-                up_votes__gte=int(rating), up_votes__lte=int(rating) + 25,
-                available=can_work,
-                thumbnail_price__gte=float(thumbnail_cost),
-                thumbnail_price__lte=float(thumbnail_cost) + thumbnail_cost_range,
-            )
+            if int(channel_art_cost) == 20:
+                channel_art_cost_range = 80
+            else:
+                channel_art_cost_range = 5
 
-            query = query.order_by('-up_votes')
+            # the query that is built with edited params from the form
+            # this needs to be simplified at some point
+            if can_work is True and does_monthly is True:
+                query = Designer.objects.filter(
+                    votes__gte=int(rating), votes__lte=int(rating) + 25,
+                    available=True,
+                    monthly=True,
+                    thumbnail_price__gte=float(thumbnail_cost),
+                    thumbnail_price__lte=float(thumbnail_cost) + thumbnail_cost_range,
+                    channel_art_price__gte=float(channel_art_cost),
+                    channel_art_price__lte=float(channel_art_cost) + channel_art_cost_range,
+                )
+            elif can_work is True:
+                query = Designer.objects.filter(
+                    votes__gte=int(rating), votes__lte=int(rating) + 25,
+                    available=True,
+                    thumbnail_price__gte=float(thumbnail_cost),
+                    thumbnail_price__lte=float(thumbnail_cost) + thumbnail_cost_range,
+                    channel_art_price__gte=float(channel_art_cost),
+                    channel_art_price__lte=float(channel_art_cost) + channel_art_cost_range,
+                )
+            elif does_monthly is True:
+                query = Designer.objects.filter(
+                    votes__gte=int(rating), votes__lte=int(rating) + 25,
+                    monthly=True,
+                    thumbnail_price__gte=float(thumbnail_cost),
+                    thumbnail_price__lte=float(thumbnail_cost) + thumbnail_cost_range,
+                    channel_art_price__gte=float(channel_art_cost),
+                    channel_art_price__lte=float(channel_art_cost) + channel_art_cost_range,
+                )
+            else:
+                query = Designer.objects.filter(
+                    votes__gte=int(rating), votes__lte=int(rating) + 25,
+                    thumbnail_price__gte=float(thumbnail_cost),
+                    thumbnail_price__lte=float(thumbnail_cost) + thumbnail_cost_range,
+                    channel_art_price__gte=float(channel_art_cost),
+                    channel_art_price__lte=float(channel_art_cost) + channel_art_cost_range,
+                )
+
+
+            query = query.order_by('-votes')
 
             # calculation for what result message to display
             if len(query) == 0:
@@ -87,7 +135,8 @@ def find(request):
 
 def designer_detail(request, designer_id):
     designer = get_object_or_404(Designer, pk=designer_id)
-    context = {'designer': designer, }
+    duplicate = designer.votes.exists(designer_id)
+    context = {'designer': designer, 'duplicate': duplicate, }
     return render(request, 'main/designer_detail.html', context)
 
 
@@ -128,6 +177,16 @@ class UpdateProfile(LoginRequiredMixin, generic.UpdateView):
 
     def get_object(self):
         return self.request.user
+
+
+def designer_detail(request, designer_id):
+    designer = get_object_or_404(Designer, pk=designer_id)
+    duplicate = designer.votes.exists(designer_id)
+    if request.method == 'POST':
+            designer.votes.up(designer_id)
+
+    context = {'designer': designer, 'duplicate': duplicate, }
+    return render(request, 'main/designer_detail.html', context)
 
 # def update_profile(request):
 #

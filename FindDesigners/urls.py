@@ -22,7 +22,8 @@ from main import views
 
 
 urlpatterns = [
-    url(r'^$', views.landing, name='home'),
+    url(r'^$', views.landing, name='landing'),
+    url(r'home/$', views.home, name='home'),
     url(r'login/$', views.LoginView.as_view(), name='login'),
     url(r'logout/$', views.LogoutView.as_view(), name='logout'),
     url(r'signup/$', views.SignUp.as_view(), name='signup'),
@@ -31,7 +32,7 @@ urlpatterns = [
     url(r'find', views.find, name='find'),
     url(r'^designer/', include('main.urls')),
     url(r'^admin/', admin.site.urls),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 if settings.DEBUG:
     import debug_toolbar

@@ -36,12 +36,15 @@ rating_choices = (
 thumbnail_choices = (
     ('0', '0-1'), ('1', '1-2'), ('2', '2+'),
             )
-
+channel_art_choices = (
+    ('0', '0-5'), ('5', '5-10'), ('10', '10-15'), ('15', '15-20'), ('20', '20+'),
+)
 
 class FilterDesigners(forms.Form):
     rating = forms.ChoiceField(widget=forms.Select(), choices=rating_choices, required=False, )
     can_work = forms.BooleanField(required=False, label='Available')
     thumbnail_cost = forms.ChoiceField(
         widget=forms.Select(), choices=thumbnail_choices, required=False, label='Thumbnail Price Range')
-    does_monthly = forms.BooleanField
+    does_monthly = forms.BooleanField(required=False, label='Available For Monthly Deals')
+    channel_art_cost = forms.ChoiceField(choices=channel_art_choices, required=False, label='Channel Art Price Range')
 

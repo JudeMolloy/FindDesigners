@@ -7,10 +7,19 @@
     <br>
     <br>
     <h2>Twitter: <a href="https://twitter.com/{{ designer.twitter }}">@{{ designer.twitter }}</a></h2>
-    <h2>{{ designer.up_votes }} Upvote{{ designer.up_votes|pluralize }}.</h2>
+    <h2>{{ designer.votes.count }} Upvote{{ designer.votes.count|pluralize }}.</h2>
     <h2>{{ designer.is_available }}</h2>
     <h2>Thumbnail Price: £{{ designer.thumbnail_price|floatformat:"-2" }}</h2>
     <h2>Channel Art Price: £{{ designer.channel_art_price|floatformat:"-2" }}</h2>
     <h2>{{ designer.is_monthly }}</h2>
+    <br>
+    {% if user.is_authenticated %}
+        {% if not duplicate %}
+            <form method="POST">
+            {% csrf_token %}
+                <button class="btn btn-outline-primary" type="submit">Upvote</button>
+            </form>
+        {% endif %}
+    {% endif %}
 </div>
 {% endblock %}

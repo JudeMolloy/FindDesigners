@@ -5,6 +5,7 @@ from django.contrib.auth.models import (
 )
 from django.db import models
 from django.utils import timezone
+from vote.managers import VotableManager
 
 
 class UserManager(BaseUserManager):
@@ -43,7 +44,7 @@ class Designer(AbstractBaseUser, PermissionsMixin):
     twitter = models.CharField(max_length=15)
     bio = models.TextField(max_length=145, blank=True, default="")
     avatar = models.ImageField(upload_to='img', default='img/default_profile_pic.jpg')
-    up_votes = models.IntegerField(default=0)
+    votes = VotableManager()
     available = models.BooleanField(default=False)
     thumbnail_price = models.FloatField(null=True)
     channel_art_price = models.FloatField(null=True)
@@ -52,6 +53,7 @@ class Designer(AbstractBaseUser, PermissionsMixin):
     date_joined = models.DateTimeField(default=timezone.now)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
+    is_designer = models.BooleanField(default=True)
 
     objects = UserManager()
 

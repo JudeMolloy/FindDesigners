@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans" rel="stylesheet">
+
+    <!-- Main CSS -->
+{% load static %}
+      <link rel="stylesheet" type="text/css" href="{% static 'main/styles.css' %}">
+  </head>
+
+<body>
+
+{% comment %}
+
+
+If you are interested in a job with Find Designers please visit our jobs page :)
+
+
+{% endcomment %}
+
+        <div class="container-fluid">
+            <nav class="navbar">
+                <div class="col-xs-4">
+                    <a class="logo">
+                        <img src="{% static 'main/img/logoxs.png' %}"  class="logo-img">
+                        </a>
+                </div>
+                <div class="col-xs-8">
+                    <ul class="nav float-xs-right navbar-nav">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Find</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container">
+                <h1 class="header-text">Search a Community of Top Designers</h1>
+                <script>
+                  $(function(){
+                      $(".element").typed({
+                        strings: ["First sentence.", "Second sentence."],
+                        typeSpeed: 0
+                      });
+                  });
+                </script>
+                <div class="element"> </div>
+                <img src="{% static 'main/img/landingimg.png' %}" class="img-fluid">
+                <p class="credit">Work by Dobzy, Straaver, JD<hr></p>
+                <div class="center-button my-3">
+                    <button type="button" class="btn btn-outline-primary btn-lg">Sign Up!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-info">
+            <div class="container">
+                <h1 class="info-header py-3">What is Find Designers?</h1>
+                <img src="{% static 'main/img/logo.png' %}" class="col-md-6">
+                <p class="mb-3 col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad dignissimos dolorem eius et eum
+                    excepturi explicabo inventore libero, nesciunt nostrum quod reprehenderit sint vel voluptatibus.
+                    Eaque odit velit voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias, atque
+                    deserunt dolorem, dolores eligendi eos, expedita explicabo laborum magnam nam nihil non numquam quia
+                    temporibus vel voluptate. Quia, velit.</p>
+            </div>
+        </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/8dae4d5025.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+
+</body>
+</html>

@@ -16,11 +16,19 @@
 <div class="container">
     <form method="POST" action="">
         {% csrf_token %}
-        <section class="container lead form-group col-md-4">{{ form.rating.label }} {{ form.rating }}</section>
-        <section class="container lead form-group col-md-4">{{ form.can_work.label }} {{ form.can_work }}</section>
-        <section class="container lead form-group col-md-4">{{ form.thumbnail_cost.label }}
-            {{ form.thumbnail_cost }}</section>
-        <input type="submit" value="Search" class="btn btn-primary">
+        <div class="container">
+            <section class="container lead form-group col-md-4">{{ form.rating.label }} {{ form.rating }}</section>
+            <section class="container lead form-group col-md-4">{{ form.thumbnail_cost.label }}
+                {{ form.thumbnail_cost }}</section>
+            <section class="container lead form-group col-md-4">{{ form.channel_art_cost.label }} {{ form.channel_art_cost }}</section>
+        </div>
+        <br>
+        <div class="container">
+            <section class="container lead form-group col-md-4">{{ form.can_work.label }} {{ form.can_work }}</section>
+            <section class="container lead form-group col-md-4">{{ form.does_monthly.label }} {{ form.does_monthly }}</section>
+        </div>
+        <br>
+        <input type="submit" value="Search" class="btn btn-primary text-center">
     </form>
 
 <br>
@@ -31,17 +39,23 @@
     <h1>Sorry, we couldn't find any designers that match your search.</h1>
 {% endif %}
 <br>
-<br>
+<hr>
 
 </div>
 
+    <div class="container">
 {% for designer in query %}
-    <ul class="container text-center">
-        <h3><img src="{{ designer.avatar.url }}"  height="100" width="100"> {{ designer }}
-            {{ designer.up_votes }} Upvote{{ designer.up_votes|pluralize }} {{ designer.is_available }}
-            {{ desingenr.thumbnail_cost }} <a href="{% url 'main:designer_detail' designer.pk %}">View Profile</a></h3>
-    <br>
-    </ul>
+<div class="card card-block">
+  <a href="{% url 'main:designer_detail' designer.pk %}">
+      <img class="pull-left designer-find" height="200" width="200" src="{{ designer.avatar.url }}"></a>
+
+    <h4 class="card-title">{{ designer.get_long_name }}</h4>
+    <h2 class="card-text"></h2>
+    <a href="{% url 'main:designer_detail' designer.pk %}" class="btn btn-primary">View Profile</a>
+
+</div>
+<hr>
 {% endfor %}
+</div>
 
 {% endblock %}

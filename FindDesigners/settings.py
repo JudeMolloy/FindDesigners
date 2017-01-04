@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django_cleanup',
     'bootstrap3',
     'debug_toolbar',
+    'vote',
 ]
 
 MIDDLEWARE = [
@@ -125,6 +126,11 @@ PROJECT_ROOT = os.path.abspath(os.path.dirname(__name__))
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
 STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'

@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <!-- Main CSS -->
+{% load static %}
+      <link rel="stylesheet" type="text/css" href="{% static 'main/styles.css' %}">
   </head>
 
-  <body>
+  <body class="background">
 
     <nav class="navbar navbar-light bg-faded">
   <a class="navbar-brand" href="#">FindDesigners</a>
@@ -53,7 +56,7 @@
   {% if user.is_authenticated %}
       <ul class="nav navbar-nav float-xs-right mx-2">
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'main:designer_detail' request.user.pk %}"><img src="{{ request.user.avatar.url }}" height="30" width="30">  View Profile</a>
+            <a class="nav-link" href="{% url 'main:designer_detail' request.user.pk %}"><img class="rounded-circle" src="{{ request.user.avatar.url }}" height="30" width="30">  View Profile</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="logout">Log out</a>

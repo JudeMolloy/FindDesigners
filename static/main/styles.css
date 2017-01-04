@@ -1,0 +1,129 @@
+/*
+
+MAIN
+
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.no-deco {
+    text-decoration: none;
+}
+
+.center-button {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/*
+
+NAV-BAR AND HEADER
+
+*/
+
+.header-text {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 4rem 0 4rem 0 ; /* margin: top right bottom left */
+}
+.credit{
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    text-align: center;
+    color: #B0BBC2;
+    opacity: 0.5;
+}
+
+.logo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.1rem;
+}
+
+.logo-img {
+    margin-bottom: 0.5rem;
+}
+.nav-link {
+    color: #323b43;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 0.7rem;
+    margin-left: 3rem;
+
+}
+
+.nav-link:hover {
+    color: #848484;
+}
+
+
+/*
+
+INFO
+
+*/
+
+.wrapper-info {
+    background-color: #f8f7fc;
+}
+
+.info-header {
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+/*
+
+FOOTER
+
+*/
+
+.footer{
+
+}
+
+.footer-wrapper{
+    background-color: #f8f7fc;
+}
+
+
+/*
+
+SEARCH PAGES
+
+*/
+
+.test{
+    margin-top: 32.5px;
+}
+
+.designer-find {
+    outline-color: #0275d8;
+    outline-width: 3px;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
